@@ -13,9 +13,12 @@ It provides methods for creating, trading, and removing liquidity of the pool wh
 
 ## Brief Explanation
 
-You can check the sample token in this [link](https://dexscreener.com/solana/8ko7PyzzG8RZUXhHhahfsFE2g1tnCkPWddEBXrmKs42X)
+You can check the sample token in this. [link](https://dexscreener.com/solana/8ko7PyzzG8RZUXhHhahfsFE2g1tnCkPWddEBXrmKs42X)
+
 But this token is tested with very small liquidity, so didn't make good profit.
+
 But it is very profitable when you try it with a little big amount.
+
 I hope this can be helpful for you and can help you with my good experience in development of Solana Trading bots.
 
 ## Usage
