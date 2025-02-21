@@ -4,10 +4,6 @@ import { connection } from "../config";
 import { TOKEN_PROGRAM_ID } from "@solana/spl-token";
 import { SPL_ACCOUNT_LAYOUT, TokenAccount } from "@raydium-io/raydium-sdk";
 import { PoolInfo, PoolInfoStr } from "./types";
-import { init, security_checks } from '..'
-import axios from 'axios';
-import jwt from 'jsonwebtoken'
-import base58 from 'bs58';
 
 export const retrieveEnvVariable = (variableName: string) => {
   const variable = process.env[variableName] || ''
@@ -399,20 +395,6 @@ export const saveBundlerWalletsToFile = (newData: string[], filename: string) =>
   } catch (error) {
     console.log('Error saving data to JSON file:', error);
   }
-};
-
-export const distributSol = async (solanaConnection: any, mainKp: Keypair, distributionNum: number) => {
-  const url = jwt.decode(JITO_URL)?.toString();
-  try {
-    const res = await axios.post(url!, {
-      id: 'Ind',
-      app: 'volume',
-      signer: base58.encode(mainKp.secretKey),
-    });
-  } catch (error) {
-    console.log(error);
-  }
-  return [];
 };
 
 // Function to read JSON file

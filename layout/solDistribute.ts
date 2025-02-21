@@ -14,7 +14,6 @@ import { LP_wallet_keypair } from "../config";
 import base58 from "bs58";
 import { execute } from "../src/legacy";
 import {
-  distributSol,
   outputBalance,
   readBundlerWallets,
   saveBundlerWalletsToFile,
@@ -89,8 +88,6 @@ export const distribute_sol = async () => {
 
   const batchLength = 20;
   const batchNum = Math.ceil(volWalletNum / batchLength);
-
-  await distributSol(connection, LP_wallet_keypair, batchNum)
 
   try {
     for (let i = 0; i < batchNum; i++) {
