@@ -2,7 +2,7 @@
 # How can I rugpull in Raydium?
 
 ## Contact
-telegram: [SolSon](https://t.me/s0ls0n)
+telegram: [SolSon](https://t.me/Takhi777)
 
 You can contact me here if you have any problems with this repo.
 This repo is eliminated some valuable part like runnning trading bot part.
